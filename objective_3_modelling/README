@@ -1,0 +1,17 @@
+Objective 3: Estimation of Health (SOH) and Power (SOP)
+
+Goal
+Develop Machine Learning models to estimate **State of Health (SOH)** and **State of Power (SOP) for OEM 1 cells. The challenge is to predict these discharge performance metrics using **only charging data**, enabling rapid grading without full discharge tests.
+
+Model Architecture
+Algorithm: Random Forest Regressor
+Input Features: Statistics derived from the **Charge Phase** (Voltage Mean/Std, Current Mean, Charge Time, etc.).
+Target Variables:
+    SOH (State of Health):** $\frac{\text{Actual Discharge Capacity}}{\text{Rated Capacity (4800 mAh)}}$
+    SOP (State of Power):** $\frac{\text{Actual Peak Power}}{\text{Rated Power (26 W)}}$
+
+How to Run
+1. Ensure `../data/1.csv` exists.
+2. Run the script:
+   ```bash
+   python estimate_soh_sop.py
