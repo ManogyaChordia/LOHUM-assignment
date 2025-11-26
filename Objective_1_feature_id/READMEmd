@@ -1,0 +1,15 @@
+objective 1: Feature Identification
+
+Goal
+Determine the physical significance of the unlabeled **"Feature 10"** column in the provided dataset.
+
+Methodology
+1.  Hypothesis: Based on unit analysis (numerical range similar to Capacity $\times$ Voltage), we hypothesized Feature 10 represents **Energy (mWh)**.
+2.  Physics Derivation: Energy is defined as the time integral of Power ($E = \int V \cdot I \, dt$).
+3.  Verification: We calculated a proxy for energy ($Capacity_{mAh} \times Voltage_{V}$) and computed the Pearson correlation coefficient against Feature 10.
+
+How to Run
+1. Ensure `../data/1.csv` exists.
+2. Run the script:
+   ```bash
+   python identify_feature.py
