@@ -4,8 +4,9 @@ Model Accuracy
 The Random Forest models achieved exceptional accuracy using only charging data:
 
 | Metric | SOH Model | SOP Model |
-| :--- | :--- | :--- |
+| :--- | :---: | :---: |
 | **MAPE** (Mean Absolute Percentage Error) | **~1.70%** | **~0.31%** |
+| **MAE** (Mean Absolute Error) | **0.00905** | **0.00011** |
 | **RMSE** (Root Mean Square Error) | **0.0189** | **0.0005** |
 
 ## Key Insights
